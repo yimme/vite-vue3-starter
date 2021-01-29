@@ -1,0 +1,24 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:vue/vue3-recommended",
+        "prettier",
+        "prettier/vue"
+    ],
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module",
+        "ecmaVersion": 2018,
+        "project": "tsconfig.json",
+        "tsconfigRootDir": "./"
+    },
+    "plugins": [
+        "vue",
+        "@typescript-eslint"
+    ]
+}
