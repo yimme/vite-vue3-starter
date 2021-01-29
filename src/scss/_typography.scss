@@ -2,6 +2,15 @@
     @return $size / 16 * 1rem;
 }
 
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
 .title {
     font-size: rem(72);
     line-height: rem(80);
