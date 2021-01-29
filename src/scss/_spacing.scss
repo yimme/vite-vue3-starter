@@ -1,0 +1,35 @@
+$scale: 4px;
+$f1: 0;
+$f2: 1;
+$max: 8;
+
+@for $i from 1 through $max {
+    $f: $f1 + $f2;
+    $f1: $f2 !global;
+    $f2: $f !global;
+    .mb-#{$i} {
+        margin-bottom: $f * $scale !important;
+    }
+
+    .mt-#{$i} {
+        margin-top: $f * $scale !important;
+    }
+
+    .my-#{$i} {
+        margin-top: $f * $scale !important;
+        margin-bottom: $f * $scale !important;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: $f * $scale !important;
+    }
+
+    .pt-#{$i} {
+        padding-top: $f * $scale !important;
+    }
+
+    .py-#{$i} {
+        padding-top: $f * $scale !important;
+        padding-bottom: $f * $scale !important;
+    }
+}
