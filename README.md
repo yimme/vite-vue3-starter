@@ -1,4 +1,4 @@
 Todo:
 
-- [ ] Add vuex
+- [x] Add vuex
 - [x] Add vue-router
