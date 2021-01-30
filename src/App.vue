@@ -3,13 +3,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+  import { defineComponent } from 'vue';
 
-export default defineComponent({
-  name: 'App',
-})
+  export default defineComponent({
+    name: 'App',
+  });
 </script>
 
 <style lang="scss">
-@import './scss/_main';
+  @import './scss/_main';
 </style>
