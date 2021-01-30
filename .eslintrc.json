@@ -1,24 +1,20 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true
-    },
-    "extends": [
-        "plugin:@typescript-eslint/recommended",
-        "plugin:vue/vue3-recommended",
-        "prettier",
-        "prettier/vue"
-    ],
-    "parser": "vue-eslint-parser",
-    "parserOptions": {
-        "parser": "@typescript-eslint/parser",
-        "sourceType": "module",
-        "ecmaVersion": 2018,
-        "project": "tsconfig.json",
-        "tsconfigRootDir": "./"
-    },
-    "plugins": [
-        "vue",
-        "@typescript-eslint"
-    ]
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "eslint:recommended",
+    "@vue/typescript/recommended",
+    "@vue/prettier",
+    "@vue/prettier/@typescript-eslint"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021
+  },
+  "plugins": [],
+  "rules": {}
 }
