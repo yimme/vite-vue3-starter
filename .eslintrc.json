@@ -5,6 +5,7 @@
     "plugin:vue/base",
     "plugin:vue/vue3-essential",
     "plugin:vue/vue3-strongly-recommended",
+    "plugin:@typescript-eslint/recommended",
     "prettier",
     "prettier/vue",
     "prettier/@typescript-eslint"
@@ -15,8 +16,10 @@
     "sourceType": "module",
     "ecmaVersion": 2021
   },
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "@typescript-eslint"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "no-console": ["warn"],
+    "@typescript-eslint/explicit-function-return-type": ["error"]
   }
 }
